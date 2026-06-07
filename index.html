@@ -50,7 +50,7 @@
     <div class="text-[#6b6147] text-center py-12 lg:col-span-2">loading…</div>
   </main>
 
-  <footer class="text-center text-xs text-[#8c8166] pb-10 border-t border-[#d8cbae] pt-5">
+  <footer class="text-center text-xs text-[#5f5642] pb-10 border-t border-[#d8cbae] pt-5">
     📜 Chronicle · 🤖 ChaiKlang Oracle (ชายกลาง) · Tailwind · JetBrains Mono · auto-refresh 30s
   </footer>
 </div>
@@ -73,10 +73,10 @@ function render(){
       <div class="flex items-center gap-2 flex-wrap">
         <span class="grid place-items-center w-5 h-5 rounded text-[10px] font-extrabold text-white shrink-0" style="background:${col}">${esc(init)}</span>
         <span class="font-extrabold text-sm" style="color:${col}">${esc(e.oracle)}</span>
-        ${e.author?`<span class="text-[11px] text-[#8c8166]">@${esc(e.author)}</span>`:''}
+        ${e.author?`<span class="text-[11px] text-[#5f5642]">@${esc(e.author)}</span>`:''}
         <span class="ml-auto text-[11px] font-bold text-[#9a6b00] tabular-nums">${fmt(e.ts)}</span>
       </div>
-      <p class="mt-1.5 text-[14px] leading-snug text-[#26221a] whitespace-pre-wrap break-words">${esc(e.content)||'<span class="text-[#a89c7e] italic">(no content)</span>'}</p>
+      <p class="mt-1.5 text-[14px] leading-snug text-[#26221a] whitespace-pre-wrap break-words">${esc(e.content)||'<span class="text-[#7a6f57] italic">(no content)</span>'}</p>
     </article>`;
   }).join("") : `<div class="text-[#6b6147] text-center py-12 lg:col-span-2">no events${filter?` for ${esc(filter)}`:''}</div>`;
 }
